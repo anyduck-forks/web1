@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лабораторна 5 - Завдання 3</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-weight: 700;
+            color: white;
+        }
+
+        main,
+        aside,
+        header {
+            background-color: #e094a0;
+        }
+
+        section {
+            background-color: #f2b6c0;
+        }
+
+        menu,
+        footer {
+            background-color: #c45161;
+        }
+
+        .aside-left {
+            float: left;
+            margin-right: 0.5rem;
+        }
+
+        .aside-right {
+            float: right;
+            margin-left: 0.5rem;
+            writing-mode: vertical-rl;
+            text-orientation: upright;
+        }
+
+        header,
+        menu,
+        aside,
+        section,
+        main,
+        footer {
+            padding: 1rem 3rem;
+            margin-top: 0;
+            margin-bottom: 0.5rem;
+        }
+
+        footer {
+            clear: both;
+        }
+
+        main {
+            overflow: hidden;
+        }
+    </style>
+</head>
+
+<body>
+    <header>HEADER</header>
+    <menu>MENU</menu>
+    <div class="aside-left">
+        <aside>ASIDE 1</aside>
+        <aside>ASIDE 2</aside>
+    </div>
+    <aside class="aside-right">
+        ASIDE 3
+    </aside>
+    <main>
+        MAIN CONTENT
+        <section>SECTION 1</section>
+        <section>SECTION 2</section>
+    </main>
+    <footer>FOOTER</footer>
+</body>
+
+</html>
