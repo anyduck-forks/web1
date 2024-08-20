@@ -1,0 +1,169 @@
+:root {
+    --accent-color: #213555;
+    --hover-color: #B4B4B3;
+}
+
+html {
+    font-family: sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+}
+
+nav {
+    width: 100%;
+    background-color: white;
+}
+
+nav ul {
+    list-style-type: none;
+    text-transform: uppercase;
+    font-weight: bolder;
+
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+nav a {
+    margin-bottom: 2px;
+    color: var(--accent-color);
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+
+    transition: color 0.5s ease, border-color 0.3s ease;
+
+    &:hover {
+        color: var(--hover-color);
+        border-bottom-color: var(--hover-color);
+    }
+}
+
+#hero {
+    background-color: rgba(0, 0, 0, 0.3);
+    background-image: url("https://images.unsplash.com/photo-1494322296366-b46227baa318?q=80&w=2075");
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: multiply;
+
+    height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    color: white;
+    text-align: center;
+
+    h1 {
+        margin-top: -4rem;
+        font-size: 4rem;
+
+        animation: fly-in 0.5s ease 0.5s 1;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+}
+
+@keyframes fly-in {
+    0% {
+        margin-top: 100%;
+    }
+}
+
+section {
+    padding: 1rem 2rem;
+
+    max-width: 1200px;
+    margin: 0 auto;
+
+    h2 {
+        text-align: center;
+    }
+}
+
+.about-wrapper {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.about-image {
+    max-width: 620px;
+    object-fit: cover;
+    border: 2px white solid;
+    box-shadow: 0 0 2rem rgba(0, 0, 0, 0.3);
+}
+
+.about-text {
+    flex-grow: 1;
+    width: min-content;
+    min-width: 32rem;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.gallery-block {
+    position: relative;
+    border: 2px transparent solid;
+    transition: all 0.5s ease;
+
+    &:hover .gallery-block__title {
+        opacity: 1;
+    }
+
+    &:hover {
+        border: 2px white solid;
+        box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
+        transform: scale(1.02);
+    }
+}
+
+.gallery-block__image {
+    object-fit: cover;
+    height: 300px;
+    width: 300px;
+}
+
+.gallery-block__title {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 33%;
+    bottom: 33%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-weight: 700;
+    background-color: rgba(255, 255, 255, 0.7);
+
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+footer {
+    display: flex;
+    gap: 1rem;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+    color: white;
+    background-color: var(--accent-color);
+    padding: 1rem;
+
+    a {
+        color: var(--hover-color);
+    }
+}
