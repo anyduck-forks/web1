@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лабораторна 7 - Завдання 2</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            width: 360px;
+            margin: 0 auto;
+        }
+
+        .bubble {
+            position: relative;
+            margin: 1rem;
+
+            background-color: lightcoral;
+            border-radius: 1rem 1rem 1rem 0;
+        }
+
+        .bubble-message {
+            padding: 1rem;
+        }
+
+        .bubble-avatar img {
+            width: 50px;
+            height: 50px;
+            object-fit: cover;
+            border-radius: 100%;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.7);
+        }
+
+        .bubble-avatar {
+            position: absolute;
+            width: max-content;
+            margin-inline: 5rem;
+
+            bottom: 0;
+            right: 100%;
+            text-align: right;
+        }
+
+        .bubble-avatar__image {
+            margin-inline: 0.5rem;
+            position: absolute;
+
+            bottom: 0;
+            left: 100%;
+        }
+
+        .mine.bubble {
+            background-color: skyblue;
+            border-radius: 1rem 1rem 0 1rem;
+        }
+
+        .mine .bubble-avatar {
+            right: unset;
+            left: 100%;
+            text-align: left;
+        }
+
+        .mine .bubble-avatar__image {
+            left: unset;
+            right: 100%;
+        }
+
+        .bubble-avatar__time {
+            margin-bottom: 12px;
+            color: gray;
+            font-size: 0.75rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bubble">
+        <div class="bubble-avatar">
+            <div class="bubble-avatar__image">
+                <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=50" alt="avatar">
+            </div>
+            <div class="bubble-avatar__name">Anie Smith</div>
+            <div class="bubble-avatar__time">4 hours ago</div>
+        </div>
+        <div class="bubble-message">
+            Lorem ipsum dolor sit amet consectetur adipisicing.
+        </div>
+    </div>
+    <div class="bubble mine">
+        <div class="bubble-avatar">
+            <div class="bubble-avatar__image">
+                <img src="https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?w=50" alt="avatar">
+            </div>
+            <div class="bubble-avatar__name">Jack Silverstion</div>
+            <div class="bubble-avatar__time">4 hours ago</div>
+        </div>
+        <div class="bubble-message">
+            Ex, blanditiis quae quos maxime hic.
+        </div>
+    </div>
+    <div class="bubble">
+        <div class="bubble-avatar">
+            <div class="bubble-avatar__image">
+                <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=50" alt="avatar">
+            </div>
+            <div class="bubble-avatar__name">Anie Smith</div>
+            <div class="bubble-avatar__time">4 hours ago</div>
+        </div>
+        <div class="bubble-message">
+            Dignissimos libero porro qui unde perspiciatis assumenda.
+        </div>
+    </div>
+    <div class="bubble mine">
+        <div class="bubble-avatar">
+            <div class="bubble-avatar__image">
+                <img src="https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?w=50" alt="avatar">
+            </div>
+            <div class="bubble-avatar__name">Jack Silverstion</div>
+            <div class="bubble-avatar__time">3 hours ago</div>
+        </div>
+        <div class="bubble-message">
+            Dicta in et quaerat corporis aliquam reprehenderit.
+        </div>
+    </div>
+    <div class="bubble">
+        <div class="bubble-avatar">
+            <div class="bubble-avatar__image">
+                <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=50" alt="avatar">
+            </div>
+            <div class="bubble-avatar__name">Anie Smith</div>
+            <div class="bubble-avatar__time">3 hours ago</div>
+        </div>
+        <div class="bubble-message">
+            Error, optio ipsum tempora incidunt vero explicabo?
+        </div>
+    </div>
+    <div class="bubble mine">
+        <div class="bubble-avatar">
+            <div class="bubble-avatar__image">
+                <img src="https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?w=50" alt="avatar">
+            </div>
+            <div class="bubble-avatar__name">Jack Silverstion</div>
+            <div class="bubble-avatar__time">2 hours ago</div>
+        </div>
+        <div class="bubble-message">
+            A facere obcaecati voluptatem animi dignissimos ducimus?
+        </div>
+    </div>
+</body>
+
+</html>

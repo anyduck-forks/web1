@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лабораторна 7 - Завдання 3</title>
+    <style>
+        body {
+            width: 480px;
+            margin: 0 auto;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        ul>li {
+            position: relative;
+            background-color: cadetblue;
+            padding: 1rem;
+
+            &:hover {
+                background-color: darkslateblue;
+
+                >ul {
+                    display: block;
+                }
+            }
+        }
+
+        .level1 {
+            display: flow-root;
+
+            >li {
+                float: left;
+                display: block;
+            }
+        }
+
+        .level2,
+        .level3 {
+            display: none;
+            position: absolute;
+            width: 100%;
+        }
+
+        .level2 {
+            top: 100%;
+            left: 0;
+        }
+
+        .level3 {
+            top: 0;
+            left: 100%;
+
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul class="level1">
+            <li>level 1
+                <ul class="level2">
+                    <li>level 2
+                        <ul class="level3">
+                            <li>level 3</li>
+                            <li>level 3</li>
+                            <li>level 3</li>
+                            <li>level 3</li>
+                        </ul>
+                    </li>
+                    <li>level 2
+                        <ul class="level3">
+                            <li>level 3</li>
+                            <li>level 3</li>
+                            <li>level 3</li>
+                            <li>level 3</li>
+                        </ul>
+                    </li>
+                    <li>level 2
+                        <ul class="level3">
+                            <li>level 3</li>
+                            <li>level 3</li>
+                            <li>level 3</li>
+                            <li>level 3</li>
+                        </ul>
+                    </li>
+                    <li>level 2
+                        <ul class="level3">
+                            <li>level 3</li>
+                            <li>level 3</li>
+                            <li>level 3</li>
+                            <li>level 3</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>level 1
+                <ul class="level2">
+                    <li>level 2
+                        <ul class="level3">
+                            <li>level 3</li>
+                            <li>level 3</li>
+                            <li>level 3</li>
+                            <li>level 3</li>
+                        </ul>
+                    </li>
+                    <li>level 2
+                        <ul class="level3">
+                            <li>level 3</li>
+                            <li>level 3</li>
+                            <li>level 3</li>
+                            <li>level 3</li>
+                        </ul>
+                    </li>
+                    <li>level 2
+                        <ul class="level3">
+                            <li>level 3</li>
+                            <li>level 3</li>
+                            <li>level 3</li>
+                            <li>level 3</li>
+                        </ul>
+                    </li>
+                    <li>level 2
+                        <ul class="level3">
+                            <li>level 3</li>
+                            <li>level 3</li>
+                            <li>level 3</li>
+                            <li>level 3</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>level 1
+                <ul class="level2">
+                    <li>level 2
+                        <ul class="level3">
+                            <li>level 3</li>
+                            <li>level 3</li>
+                            <li>level 3</li>
+                            <li>level 3</li>
+                        </ul>
+                    </li>
+                    <li>level 2
+                        <ul class="level3">
+                            <li>level 3</li>
+                            <li>level 3</li>
+                            <li>level 3</li>
+                            <li>level 3</li>
+                        </ul>
+                    </li>
+                    <li>level 2
+                        <ul class="level3">
+                            <li>level 3</li>
+                            <li>level 3</li>
+                            <li>level 3</li>
+                            <li>level 3</li>
+                        </ul>
+                    </li>
+                    <li>level 2
+                        <ul class="level3">
+                            <li>level 3</li>
+                            <li>level 3</li>
+                            <li>level 3</li>
+                            <li>level 3</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>level 1
+                <ul class="level2">
+                    <li>level 2
+                        <ul class="level3">
+                            <li>level 3</li>
+                            <li>level 3</li>
+                            <li>level 3</li>
+                            <li>level 3</li>
+                        </ul>
+                    </li>
+                    <li>level 2
+                        <ul class="level3">
+                            <li>level 3</li>
+                            <li>level 3</li>
+                            <li>level 3</li>
+                            <li>level 3</li>
+                        </ul>
+                    </li>
+                    <li>level 2
+                        <ul class="level3">
+                            <li>level 3</li>
+                            <li>level 3</li>
+                            <li>level 3</li>
+                            <li>level 3</li>
+                        </ul>
+                    </li>
+                    <li>level 2
+                        <ul class="level3">
+                            <li>level 3</li>
+                            <li>level 3</li>
+                            <li>level 3</li>
+                            <li>level 3</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam delectus animi odio odit fugit numquam commodi
+        labore dolorem molestias ipsam, tenetur debitis impedit, ipsa quos repudiandae ipsum nesciunt fuga iusto!</p>
+    <p>Minima eaque optio delectus velit placeat vitae, veritatis, eius ut natus esse, commodi qui dolor ea accusamus
+        neque? Dolorum accusamus voluptatem praesentium excepturi. Vero eaque fugit, dolorem iure labore accusantium.
+    </p>
+</body>
+
+</html>

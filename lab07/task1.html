@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лабораторна 7 - Завдання 1</title>
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+
+        main {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .review {
+            text-align: center;
+            position: relative;
+            padding: 0 2rem 4rem;
+            margin: 2rem 1rem 2rem;
+            max-width: 20rem;
+
+            border: 1px gainsboro solid;
+            border-radius: 4px;
+            box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+        }
+
+        .review-text::before {
+            content: '“';
+
+            display: block;
+            position: relative;
+            top: 1.5rem;
+
+            font-weight: bold;
+            font-size: 5rem;
+        }
+
+        .review-author {
+            margin-top: 1.25rem;
+            font-weight: bold;
+        }
+
+        .review-profile {
+            position: absolute;
+            bottom: -2rem;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+        }
+
+        .review-profile>img {
+            width: 72px;
+            height: 72px;
+            object-fit: cover;
+            border-radius: 100%;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.7);
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <div class="review">
+            <div class="review-text">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga quasi ab quia quae maxime suscipit
+                praesentium ducimus possimus, eius necessitatibus atque vitae laborum tenetur! Libero rem nostrum dicta!
+                Earum, quia.
+            </div>
+            <div class="review-author">
+                Bem Kelan
+            </div>
+            <div class="review-profile">
+                <img src="https://images.unsplash.com/photo-1482961674540-0b0e8363a005?h=72" alt="reviewer photo">
+            </div>
+        </div>
+        <div class="review">
+            <div class="review-text">
+                Enim earum animi pariatur reiciendis dolorem ipsam quibusdam asperiores voluptates illo blanditiis,
+                voluptate tempore eveniet nemo nulla, iure necessitatibus perspiciatis nesciunt! Illum accusamus,
+                nostrum
+                aliquid voluptates esse doloribus neque reiciendis?
+            </div>
+            <div class="review-author">
+                Justin Blum
+            </div>
+            <div class="review-profile">
+                <img src="https://images.unsplash.com/photo-1542847970-584270eb111b?w=72" alt="reviewer photo">
+            </div>
+        </div>
+        <div class="review">
+            <div class="review-text">
+                Suscipit accusamus adipisci, temporibus voluptates doloremque a non nemo iure ex quae dignissimos
+                perspiciatis, odio nihil repellendus iste. Autem repellat hic officiis voluptas labore soluta quam animi
+                aut
+                laboriosam laborum.
+            </div>
+            <div class="review-author">
+                Ruta Oswald
+            </div>
+            <div class="review-profile">
+                <img src="https://images.unsplash.com/photo-1624140717572-5a98ad095908?w=72" alt="reviewer photo">
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
