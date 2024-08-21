@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лабораторна 12 - Steam Deck</title>
+    <link href="bootstrap.min.css" rel="stylesheet">
+    <script src="bootstrap.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container">
+                <a class="navbar-brand" href="index.html#">GameStore</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#categories">Categories</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#items">Items</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h1>Steam Deck</h1>
+        <div class="row pt-4">
+            <div id="carousel" class="carousel slide col-lg-8" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="https://images.unsplash.com/photo-1654621198651-fe1baffcef76?h=480"
+                            class="d-block w-100 object-fit-cover" height="480px" alt="Steam Deck">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://images.unsplash.com/photo-1653757398818-5016ba6d2594?h=480"
+                            class="d-block w-100 object-fit-cover" height="480px" alt="Steam Deck">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            <div class="col-lg-4">
+                <h3>$349.99</h3>
+                <p>
+                    Powerful, portable PC gaming, designed for comfort and a console-like user
+                    experience.
+                </p>
+                <div class="row">
+                    <div class="col">RELEASE DATE</div>
+                    <div class="col">February 25, 2022</div>
+                </div>
+                <div class="row">
+                    <div class="col">MANUFACTURER</div>
+                    <div class="col">VALVE</div>
+                </div>
+                <div class="row">
+                    <div class="col">RATING</div>
+                    <div class="col">98%</div>
+                </div>
+
+                <button class="btn btn-primary w-100 mt-2">Buy Now</button>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
